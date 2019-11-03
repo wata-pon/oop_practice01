@@ -18,16 +18,20 @@ classBMI:
 # ex -SpartaCampDay2
 class BMI:
     def __init__(self, height, weight):
-        self.height = height
-        self.weight = weight
+        self.value = weight / (height ** 2)
+        if not (10 <= self.value <= 40):
+            raise ValueError('BMI が正常値範囲を超えています')
 
-    def calculate_bmi(self):
-        return self.weight / (self.height ** 2)
+    def __str__(self):
+        return f'{self.value:.2f}'
+
+
 
 
 # BMIのクラスのインスタンス化
 hibiki_bmi = BMI(height=1.80, weight=67.0)
-wataru_bmi = BMI(height=1.68, weight=62.1)
+print(hibiki_bmi)
 
-print(hibiki_bmi.height, hibiki_bmi.weight)
-print(hibiki_bmi.calculate_bmi())
+
+wataru_bmi = BMI(height=1.68, weight=62.1)
+print(wataru_bmi)
