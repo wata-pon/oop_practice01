@@ -12,9 +12,9 @@ class UserName:
 
 hibiki = UserName(name='hibiki')
 
+print(hibiki.screen_name())
 # print(hibiki)
 # print(type(hibiki))
-print(hibiki.screen_name())
 
 # sho = UserName('wataru')
 # print(sho.name)
