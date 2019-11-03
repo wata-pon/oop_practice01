@@ -1,6 +1,6 @@
 class UserName:
     def __init__(self, name):
-        if not(4 <= len(name) <= 20):
+        if not (4 <= len(name) <= 20):
             raise ValueError(f"${name}は文字数のルール違反やで!")
         self.name = name
 
@@ -8,9 +8,9 @@ class UserName:
         return self.name.upper()
 
 
-#UserNameのクラスインスタンス化
+# UserNameのクラスインスタンス化
 
-hibiki = UserName(name = 'hibiki')
+hibiki = UserName(name='hibiki')
 
 # print(hibiki)
 # print(type(hibiki))
