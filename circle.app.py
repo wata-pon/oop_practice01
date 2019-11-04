@@ -20,16 +20,13 @@ classCircle:
 
 
 class Circle:
-    def __init__(self, radius):
-        self.radius = radius
-
-    def area(self):
-        return (self.radius ** 2)
-
-    def perimeter(self):
-        return (self.radius * 2)
+    pass
 
 
-circle1 = Circle(radius=1)
-
+circle1 = Circle()
+circle1.area = '円の面積'
 print(circle1.area)
+
+circle3 = Circle()
+circle3.perimeter = '円周の長さ'
+print(circle3.perimeter)
