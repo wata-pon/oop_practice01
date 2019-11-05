@@ -20,13 +20,22 @@ classCircle:
 
 
 class Circle:
-    pass
+    def __init__(self, radius):
+        self.radius = radius
+
+    def area(self):
+        return (self.radius ** 2) * 3.14
+
+    def preimeter(self):
+        return (self.radius * 2) * 3.14
 
 
-circle1 = Circle()
-circle1.area = '円の面積'
-print(circle1.area)
+circle1 = Circle(radius=1)
 
-circle3 = Circle()
-circle3.perimeter = '円周の長さ'
-print(circle3.perimeter)
+print(circle1.area())
+print(circle1.preimeter())
+
+circle3 = Circle(radius=3)
+
+print(circle3.area())
+print(circle3.preimeter())
